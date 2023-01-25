@@ -1,0 +1,108 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Hej-hej | Vinbar & Mad">
+  <main class="container">
+    <figure>
+      <img src="https://via.placeholder.com/1920x800" alt="Minimal landscape" />
+      <figcaption>
+        <h1>Hej-Hej</h1>
+        <p>Vin og mad</p>
+      </figcaption>
+    </figure>
+
+    <section id="cards">
+      <div class="grid">
+        <article>
+          <h3>Vores concept</h3>
+          <ul>
+            <li>Vine på glas → under 100kr.</li>
+            <li>Vine på glas → under 100kr.</li>
+            <li>Vine på glas → under 100kr.</li>
+            <li>Vine på glas → under 100kr.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Selskab over 8 personer?</h3>
+          <p>
+            Hvis I bliver mere end 8 personer, skal vi bede jer booke bord via
+            mail. Du kan skrive til os ved at klikke på knappen nedenunder :-)
+          </p>
+          <footer>
+            <a href="mailto:dennis@farsdreng.com">Book her</a>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Galleri</h2>
+      <div class="grid">
+        <img
+          src="https://via.placeholder.com/1000x1000"
+          alt="Minimal landscape"
+        />
+        <img
+          src="https://via.placeholder.com/1000x1000"
+          alt="Minimal landscape"
+        />
+        <img
+          src="https://via.placeholder.com/1000x1000"
+          alt="Minimal landscape"
+        />
+        <img
+          src="https://via.placeholder.com/1000x1000"
+          alt="Minimal landscape"
+        />
+      </div>
+
+      <div class="grid">
+        <img
+          src="https://via.placeholder.com/1000x500"
+          alt="Minimal landscape"
+        />
+        <img
+          src="https://via.placeholder.com/1000x500"
+          alt="Minimal landscape"
+        />
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  figure {
+    position: relative;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  figcaption > h1,
+  figcaption > p {
+    color: blue;
+  }
+
+  section > .grid {
+    margin-bottom: 0.5rem;
+  }
+
+  section img {
+    margin-bottom: 0.5rem;
+  }
+
+  #gallery {
+    margin-bottom: 0.5rem;
+  }
+
+  article {
+    margin-bottom: 0.5rem;
+  }
+</style>

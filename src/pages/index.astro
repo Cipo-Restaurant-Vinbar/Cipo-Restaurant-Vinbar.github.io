@@ -1,7 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro"
+
+const production = false
 ---
 
+{production && (
 <Layout title="Cipo | Vinbar & Mad">
   <main class="container">
     <figure>
@@ -71,6 +74,9 @@ import Layout from "../layouts/Layout.astro";
     </section>
   </main>
 </Layout>
+)}
+
+{!production && <h1>Cipo.dk | Our website is nearly ready. Check back soon!</h1>}
 
 <style>
   figure {

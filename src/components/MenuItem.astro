@@ -1,0 +1,24 @@
+---
+export interface Props {
+  item: string;
+  price: string;
+}
+
+const { item, price } = Astro.props;
+---
+
+<div class="columns">
+  <div class="column col-2"></div>
+  <div class="column col-8">
+    <p>{item}</p>
+  </div>
+  <div class="column col-2"><p>{price}</p></div>
+</div>
+
+<style>
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: .8rem;
+  }
+</style>

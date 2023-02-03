@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MenuItem from "../components/MenuItem.astro";
+import MenuTitle from "../components/MenuTitle.astro";
+import { BarSnacks, ALaCarte, Cheese, Dessert } from "../data/MenuItems.js";
+---
+
+<Layout title="Cipo | Wine bar & Food">
+  <main class="container grid-md">
+    <section>
+      <div class="title">
+        <h1><b>CIPO</b></h1>
+
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/">Frontpage</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="/menu">Menu</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <section>
+        <MenuTitle title="MENU" />
+        <MenuItem
+          item="Four dishes, ‘Kitchens choice’, chosen by the whole table"
+          price="395"
+        />
+      </section>
+
+      <section>
+        <MenuTitle title="BAR SNACKS" />
+        {
+          BarSnacks.map((item) => (
+            <MenuItem item={item.item} price={item.price} />
+          ))
+        }
+      </section>
+
+      <section>
+        <MenuTitle title="À LA CARTE" />
+        {
+          ALaCarte.map((item) => (
+            <MenuItem item={item.item} price={item.price} />
+          ))
+        }
+      </section>
+
+      <section>
+        <MenuTitle title="CHEESE" />
+        {Cheese.map((item) => <MenuItem item={item.item} price={item.price} />)}
+      </section>
+
+      <section>
+        <MenuTitle title="DESSERT" />
+        {
+          Dessert.map((item) => (
+            <MenuItem item={item.item} price={item.price} />
+          ))
+        }
+      </section>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .title {
+    margin-top: 4rem;
+  }
+
+  .title > h1 {
+    text-align: center;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+</style>

@@ -1,114 +1,173 @@
 ---
-import Layout from "../layouts/Layout.astro"
-
-const production = false
+import Layout from "../layouts/Layout.astro";
+// import { Image } from "@astrojs/image/components";
 ---
 
-{production && (
-<Layout title="Cipo | Vinbar & Mad">
-  <main class="container">
-    <figure>
-      <img src="https://via.placeholder.com/1920x800" alt="Minimal landscape" />
-      <figcaption>
-        <h1>Cipo Restaurant & Vinbar</h1>
-        <p>Vin og mad</p>
-      </figcaption>
-    </figure>
+<Layout title="Cipo | Wine bar & Food">
+  <main class="container grid-lg text-center">
+    <section class="frontpage">
+      <div class="title">
+        <!-- <Image src="/images/Cipo-logo.png" alt="Cipo logo" /> -->
+        <!-- <br /> -->
 
-    <section id="cards">
-      <div class="grid">
-        <article>
-          <h3>Vores concept</h3>
-          <ul>
-            <li>Vine på glas → under 100kr.</li>
-            <li>Vine på glas → under 100kr.</li>
-            <li>Vine på glas → under 100kr.</li>
-            <li>Vine på glas → under 100kr.</li>
-          </ul>
-        </article>
+        <h1>Cipo</h1>
+        <h2>Restaurant & Wine bar</h2>
+      </div>
 
-        <article>
-          <h3>Selskab over 8 personer?</h3>
-          <p>
-            Hvis I bliver mere end 8 personer, skal vi bede jer booke bord via
-            mail. Du kan skrive til os ved at klikke på knappen nedenunder :-)
-          </p>
-          <footer>
-            <a href="mailto:dennis@farsdreng.com">Book her</a>
-          </footer>
-        </article>
+      <div class="content">
+        <p>
+          Restaurant and natural wine bar | see our <a href="/menu">menu</a>
+          <span
+            >Add some text <a href="/menu">here</a> so we can get that SEO shimmer
+            :heart:</span
+          >
+        </p>
+      </div>
+
+      <div class="content">
+        <p>
+          Parties and other inquiries? | write us on <a
+            href="mailto:info@cipo.dk">info@cipo.dk</a
+          >
+          <span
+            ><small>Visit our <a href="/">Instagram</a> for inspiration</small
+            ></span
+          >
+        </p>
+      </div>
+
+      <div class="content">
+        <a href="/" class="btn btn-lg btn-primary">Book a table</a>
       </div>
     </section>
 
-    <section id="gallery">
-      <h2>Galleri</h2>
-      <div class="grid">
-        <img
-          src="https://via.placeholder.com/1000x1000"
-          alt="Minimal landscape"
-        />
-        <img
-          src="https://via.placeholder.com/1000x1000"
-          alt="Minimal landscape"
-        />
-        <img
-          src="https://via.placeholder.com/1000x1000"
-          alt="Minimal landscape"
-        />
-        <img
-          src="https://via.placeholder.com/1000x1000"
-          alt="Minimal landscape"
-        />
+    <section class="content-small gallery">
+      <div class="columns">
+        <div class="column col-md-12">
+          <img
+            src="https://placehold.jp/900x600.png"
+            alt=""
+            class="img-responsive"
+          />
+        </div>
+        <div class="column col-md-12">
+          <img
+            src="https://placehold.jp/900x600.png"
+            alt=""
+            class="img-responsive"
+          />
+        </div>
+        <div class="column col-md-12">
+          <img
+            src="https://placehold.jp/900x600.png"
+            alt=""
+            class="img-responsive"
+          />
+        </div>
       </div>
 
-      <div class="grid">
-        <img
-          src="https://via.placeholder.com/1000x500"
-          alt="Minimal landscape"
-        />
-        <img
-          src="https://via.placeholder.com/1000x500"
-          alt="Minimal landscape"
-        />
+      <div class="columns">
+        <div class="column col-md-12">
+          <img
+            src="https://placehold.jp/900x600.png"
+            alt=""
+            class="img-responsive"
+          />
+        </div>
+        <div class="column col-md-12">
+          <img
+            src="https://placehold.jp/900x600.png"
+            alt=""
+            class="img-responsive"
+          />
+        </div>
+        <div class="column col-md-12">
+          <img
+            src="https://placehold.jp/900x600.png"
+            alt=""
+            class="img-responsive"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="content">
+        <p>
+          <span><b>Opening hours</b></span>
+          <span>Wednessday-Friday 15.00-24.00</span>
+          <span>Saturday 12.00-15.00</span>
+        </p>
+      </div>
+
+      <div class="content-small">
+        <a href="/" class="btn btn-lg btn-primary">Book a table</a>
+      </div>
+
+      <div class="content-small">
+        <p>
+          <span><b>CIPO</b></span>
+          <span>Gammel Mønt 33</span>
+          <span>1117 København K</span>
+        </p>
       </div>
     </section>
   </main>
-</Layout>
-)}
 
-{!production && <h1>Cipo.dk | Our website is nearly ready. Check back soon!</h1>}
+  <footer class="text-center">
+    <div class="content-small">
+      <p>
+        <span><a href="mailto:info@cipo.dk">info@cipo.dk</a></span>
+        <span><a href="tel:+4512435687">+4512435687</a></span>
+      </p>
+    </div>
+  </footer>
+</Layout>
 
 <style>
-  figure {
-    position: relative;
+  p {
+    font-size: 1rem;
   }
 
-  figcaption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+  span {
+    display: block;
   }
 
-  figcaption > h1,
-  figcaption > p {
-    color: blue;
+  .frontpage {
+    min-height: 100vh;
   }
 
-  section > .grid {
-    margin-bottom: 0.5rem;
+  .title {
+    margin-top: 6rem;
   }
 
-  section img {
-    margin-bottom: 0.5rem;
+  .content {
+    margin-top: 4rem;
   }
 
-  #gallery {
-    margin-bottom: 0.5rem;
+  .content-small {
+    margin-top: 2rem;
   }
 
-  article {
-    margin-bottom: 0.5rem;
+  .gallery {
+    margin-top: -2rem;
+  }
+
+  .columns {
+    margin-bottom: 0.8rem;
+  }
+
+  @media (max-width: 840px) {
+    .columns {
+      margin: auto 1rem;
+    }
+
+    .column {
+      margin-bottom: 1rem;
+    }
+
+    .frontpage {
+      margin-top: -4rem;
+    }
   }
 </style>

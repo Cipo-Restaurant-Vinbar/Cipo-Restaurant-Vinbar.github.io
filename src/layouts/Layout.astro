@@ -21,6 +21,23 @@ const { title } = Astro.props;
   </head>
   <body>
     <slot />
+
+    <footer class="text-center">
+      <div class="content-small">
+        <p>
+          <span><b>CIPO</b></span>
+          <span>Gammel Mønt 33</span>
+          <span>1117 København K</span>
+        </p>
+      </div>
+
+      <div class="content-small">
+        <p>
+          <span><a href="mailto:info@cipo.dk">info@cipo.dk</a></span>
+          <span><a href="tel:+4512435687">+4512435687</a></span>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
 
@@ -39,5 +56,17 @@ const { title } = Astro.props;
     background: #ffecd2; /* fallback for old browsers */
 
     background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  span {
+    display: block;
+  }
+
+  .content-small {
+    margin-top: 2rem;
   }
 </style>

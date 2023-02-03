@@ -7,20 +7,18 @@ import { BarSnacks, ALaCarte, Cheese, Dessert } from "../data/MenuItems.js";
 
 <Layout title="Cipo | Wine bar & Food">
   <main class="container grid-md">
-    <section>
-      <div class="title">
-        <h1><b>CIPO</b></h1>
+    <div class="title">
+      <h1><b>CIPO</b></h1>
 
-        <ul class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="/">Frontpage</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="/menu">Menu</a>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="/">Frontpage</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="/menu">Menu</a>
+        </li>
+      </ul>
+    </div>
 
     <section>
       <section>
@@ -67,6 +65,10 @@ import { BarSnacks, ALaCarte, Cheese, Dessert } from "../data/MenuItems.js";
 </Layout>
 
 <style>
+  .container {
+    padding-inline: 1rem;
+  }
+
   .title {
     margin-top: 4rem;
   }

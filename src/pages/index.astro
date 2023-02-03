@@ -66,7 +66,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
 
-      <div class="columns">
+      <div class="columns hide-sm">
         <div class="column col-md-12">
           <img
             src="/images/900x600.jpg"
@@ -158,12 +158,8 @@ import Layout from "../layouts/Layout.astro";
   }
 
   @media (max-width: 840px) {
-    .columns {
-      margin: auto 1rem;
-    }
-
     .column {
-      margin-bottom: 1rem;
+      margin-bottom: .5rem;
     }
 
     .frontpage {

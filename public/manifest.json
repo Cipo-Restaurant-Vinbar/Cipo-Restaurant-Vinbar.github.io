@@ -14,7 +14,21 @@
       "name": "Cipo | Food",
       "short_name": "Menu at Cipo",
       "description": "View our menu",
-      "url": "/menu"
+      "url": "/menu",
+    }
+  ],
+  "icons": [
+    {
+      "src": "logo-color.png",
+      "sizes": "1000x1000",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "maskable-icon-x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

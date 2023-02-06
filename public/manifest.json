@@ -14,7 +14,7 @@
       "name": "Cipo | Food",
       "short_name": "Menu at Cipo",
       "description": "View our menu",
-      "url": "/menu",
+      "url": "/menu"
     }
   ],
   "icons": [

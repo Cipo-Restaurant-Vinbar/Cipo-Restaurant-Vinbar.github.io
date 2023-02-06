@@ -17,16 +17,7 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
-    <meta
-      name="description"
-      content="Website for Cipo restaurant & wine bar."
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#ffecd2"
-    />
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json" />
     <title>{title}</title>
   </head>
   <body>
@@ -35,7 +26,7 @@ const { title } = Astro.props;
     <footer class="text-center">
       <div class="content-small">
         <p>
-          <span><b>CIPO</b></span>
+          <span><b>Cipo</b></span>
           <span>Gammel Mønt 33</span>
           <span>1117 København K</span>
         </p>
@@ -43,7 +34,9 @@ const { title } = Astro.props;
 
       <div class="content-small">
         <p>
-          <span class="mb-2"><a href="mailto:info@cipo.dk">info@cipo.dk</a></span>
+          <span class="mb-2"
+            ><a href="mailto:info@cipo.dk">info@cipo.dk</a></span
+          >
           <span><a href="tel:+4512435687">+4512435687</a></span>
         </p>
       </div>
@@ -60,12 +53,12 @@ const { title } = Astro.props;
 
   body {
     font-family: "Montserrat", sans-serif;
-    color: darkslategrey;
+    color: #2f4f4f;
     line-height: 1.5;
 
     background: #ffecd2; /* fallback for old browsers */
 
-    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
   p {

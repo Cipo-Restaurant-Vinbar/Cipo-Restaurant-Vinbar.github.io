@@ -7,11 +7,9 @@ import Layout from "../layouts/Layout.astro";
   <main class="container grid-lg text-center">
     <section class="frontpage">
       <div class="title">
-        <!-- <Image src="/images/Cipo-logo.png" alt="Cipo logo" /> -->
-        <!-- <br /> -->
-
-        <h1><b>CIPO</b></h1>
-        <h3>Restaurant & Wine bar</h3>
+        <!-- <h1>Cipo</h1>
+        <h2>Restaurant & Wine bar</h2> -->
+        <img src="/logo-no-background.png" alt="Cipo logo" width="192"/>
       </div>
 
       <div class="content">
@@ -98,6 +96,22 @@ import Layout from "../layouts/Layout.astro";
     margin-top: 6rem;
   }
 
+  .title h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title h2 {
+    font-size: 0.55rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+
   .content {
     margin-top: 4rem;
   }
@@ -107,7 +121,7 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .gallery {
-    margin-top: -2rem;
+    margin-top: -4rem;
   }
 
   .columns {

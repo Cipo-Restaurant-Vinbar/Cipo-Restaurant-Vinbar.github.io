@@ -8,7 +8,7 @@ import { BarSnacks, ALaCarte, Cheese, Dessert } from "../data/MenuItems.js";
 <Layout title="Cipo | Wine bar & Food">
   <main class="container grid-md">
     <div class="title">
-      <h1><b>CIPO</b></h1>
+        <img src="/logo-no-background.png" alt="Cipo logo" width="192" />
 
       <ul class="breadcrumb">
         <li class="breadcrumb-item">
@@ -69,15 +69,12 @@ import { BarSnacks, ALaCarte, Cheese, Dessert } from "../data/MenuItems.js";
     padding-inline: 1rem;
   }
 
-  .title {
-    margin-top: 4rem;
-  }
-
-  .title > h1 {
-    text-align: center;
+  .title > img {
+    display: block;
+    margin: 4rem auto;
   }
 
   section {
-    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 </style>

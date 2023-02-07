@@ -3,10 +3,8 @@
   "name": "Cipo | Wine bar & Food",
   "short_name": "Cipo",
   "description": "Website for Cipo | Wine bar & Food",
-  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffecd2",
-  "theme_color": "#ffecd2",
   "orientation": "portrait",
   "shortcuts": [
     {

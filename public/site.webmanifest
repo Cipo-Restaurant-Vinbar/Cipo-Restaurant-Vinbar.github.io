@@ -6,6 +6,10 @@
   "display": "standalone",
   "background_color": "#ffecd2",
   "orientation": "portrait",
+  "theme_color": "#ffecd2",
+  "start_url": "/",
+  "scope": "/",
+  "lang": "en",
   "shortcuts": [
     {
       "id": "menu",

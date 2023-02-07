@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "Cipo | Restaurant & Wine bar",
+  "name": "Cipo | Wine bar & Food",
   "short_name": "Cipo",
-  "description": "Website for Cipo Restaurant & Wine bar",
+  "description": "Website for Cipo | Wine bar & Food",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffecd2",
@@ -11,9 +11,9 @@
   "shortcuts": [
     {
       "id": "menu",
-      "name": "Cipo | Food",
-      "short_name": "Menu at Cipo",
-      "description": "View our menu",
+      "name": "Menu at Cipo | Wine bar & Food",
+      "short_name": "Cipo menu",
+      "description": "Menu at Cipo | Wine bar & Food",
       "url": "/menu",
       "icons": [
         {

@@ -1,62 +1,136 @@
 ---
 import Layout from "../layouts/Layout.astro";
-// import { Image } from "@astrojs/image/components";
+import { Image } from "@astrojs/image/components";
 ---
 
-<Layout title="Cipo | Wine bar & Food">
+<Layout title="CIPO | Eatery & Wine">
   <main class="container grid-lg text-center">
     <section class="frontpage">
       <div class="title">
-        <img src="/logo-no-background.png" alt="Cipo logo" width="192"/>
+        <img src="/cipo_logo.png" alt="CIPO logo" width="300" />
       </div>
 
       <div class="content">
         <p>
-          Restaurant and natural wine bar | see our <a href="/menu">menu</a>
-          <span
-            >Add some text <i>here</i> so we can get that SEO shimmer :heart:</span
-          >
+          Cipo Eatery and Wine is your local spot in Copenhagen. Our aim with
+          Cipo is to create a welcoming dining experience where informal tones
+          and quality are the focus. Food and wine are our great passion, and it
+          always has been.
+        </p>
+
+        <p>
+          Our menu and wine list changes regularly, but <span
+            ><a href="/menu"
+              >here is an example of what the menu might look like</a
+            ></span
+          > and <a href="/CIPO-Winelist.pdf" target="_blank">here is an example of our wine list</a
+          >.
         </p>
       </div>
 
-      <div class="content">
+      <div class="content-small">
+        <a
+          href="https://cipo.superbexperience.com"
+          class="btn btn-lg btn-primary"
+          target="_blank">Book a table</a
+        >
+      </div>
+
+      <div class="content-small">
         <p>
-          Parties and other inquiries? | write us on <a
-            href="mailto:info@cipo.dk">info@cipo.dk</a
-          >
+          We would be happy to host your next event. Whether it's a birthday, a
+          company event, a team day, or a private dinner, CIPO has the right
+          atmosphere.
           <span>
-            Visit our <i><a href="/">Instagram</a></i> for inspiration
+            If you are interested in hosting a wine tasting, we have the
+            opportunity to host a tailored event that suits your preferences and
+            level.
+          </span>
+          <br />
+          <span>
+            Visit our <a
+              href="https://www.instagram.com/cipo.cph"
+              target="_blank">Instagram</a
+            > for inspiration
           </span>
         </p>
+
+        <p>For more information <a href="/info">see the info page.</a></p>
       </div>
 
-      <div class="content">
-        <a href="/" class="btn btn-lg btn-primary">Book a table</a>
+      <div class="content-small">
+        <a
+          href="https://cipo.superbexperience.com"
+          class="btn btn-lg btn-primary"
+          target="_blank">Get a giftcard</a
+        >
       </div>
     </section>
 
-    <section class="content-small gallery">
+    <section class="content gallery">
       <div class="columns">
         <div class="column col-md-12">
-          <img src="/images/900x600.jpg" alt="" class="img-responsive" />
+          <!-- <img src="/images/Cipo-cheese.jpg" alt="" class="img-responsive" /> -->
+          <Image
+            src="/images/Cipo-cheese.jpg"
+            alt="Cipo cheese"
+            width={1400}
+            height={950}
+            class="img-responsive"
+          />
         </div>
         <div class="column col-md-12">
-          <img src="/images/900x600.jpg" alt="" class="img-responsive" />
+          <!-- <img src="/images/Cipo-consomme.jpg" alt="" class="img-responsive" /> -->
+          <Image
+            src="/images/Cipo-consomme.jpg"
+            alt="Cipo consomme"
+            width={1400}
+            height={950}
+            class="img-responsive"
+          />
         </div>
         <div class="column col-md-12">
-          <img src="/images/900x600.jpg" alt="" class="img-responsive" />
+          <!-- <img src="/images/Cipo-tatar.jpg" alt="" class="img-responsive" /> -->
+          <Image
+            src="/images/Cipo-tatar.jpg"
+            alt="Cipo tatar"
+            width={1400}
+            height={950}
+            class="img-responsive"
+          />
         </div>
       </div>
 
-      <div class="columns hide-sm">
+      <div class="columns hide-md">
         <div class="column col-md-12">
-          <img src="/images/900x600.jpg" alt="" class="img-responsive" />
+          <!-- <img src="/images/Cipo-bar.jpg" alt="" class="img-responsive" /> -->
+          <Image
+            src="/images/Cipo-bar.jpg"
+            alt="Cipo bar"
+            width={1400}
+            height={950}
+            class="img-responsive"
+          />
         </div>
         <div class="column col-md-12">
-          <img src="/images/900x600.jpg" alt="" class="img-responsive" />
+          <!-- <img src="/images/Cipo-1st-floor.jpg" alt="" class="img-responsive" /> -->
+          <Image
+            src="/images/Cipo-1st-floor.jpg"
+            alt="Cipo 1st floor"
+            width={1400}
+            height={950}
+            class="img-responsive"
+          />
         </div>
         <div class="column col-md-12">
-          <img src="/images/900x600.jpg" alt="" class="img-responsive" />
+          <!-- <img src="/images/Cipo-wine-room.jpg" alt="" class="img-responsive" /> -->
+          <Image
+            src="/images/Cipo-wine-room.jpg"
+            alt="Cipo wine room"
+            width={1400}
+            height={950}
+            class="img-responsive"
+          />
         </div>
       </div>
     </section>
@@ -71,7 +145,11 @@ import Layout from "../layouts/Layout.astro";
       </div>
 
       <div class="content-small">
-        <a href="/" class="btn btn-lg btn-primary">Book a table</a>
+        <a
+          href="https://cipo.superbexperience.com"
+          class="btn btn-lg btn-primary"
+          target="_blank">Book a table</a
+        >
       </div>
     </section>
   </main>
@@ -82,36 +160,12 @@ import Layout from "../layouts/Layout.astro";
     font-size: 1rem;
   }
 
-  .content a {
-    color: #020202;
-  }
-
   span {
     display: block;
   }
 
-  .frontpage {
-    min-height: 100vh;
-  }
-
   .title {
     margin-top: 6rem;
-  }
-
-  .title h1 {
-    font-size: 3rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-  }
-
-  .title h2 {
-    font-size: 0.55rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
   }
 
   .content {
@@ -122,21 +176,17 @@ import Layout from "../layouts/Layout.astro";
     margin-top: 2rem;
   }
 
-  .gallery {
-    margin-top: -4rem;
-  }
-
   .columns {
     margin-bottom: 0.8rem;
   }
 
-  @media (max-width: 840px) {
+  @media only screen and (max-width: 840px) {
     .column {
       margin-bottom: 0.5rem;
     }
 
     .title {
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
   }
 </style>

@@ -5,26 +5,19 @@ import MenuTitle from "../components/MenuTitle.astro";
 import { BarSnacks, ALaCarte, Cheese, Dessert } from "../data/MenuItems.js";
 ---
 
-<Layout title="Cipo | Wine bar & Food">
+<Layout title="CIPO | Menu">
   <main class="container grid-md">
-    <div class="title">
-        <img src="/logo-no-background.png" alt="Cipo logo" width="192" />
-
-      <ul class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="/">Frontpage</a>
-        </li>
-        <li class="breadcrumb-item">
-          <a href="/menu">Menu</a>
-        </li>
-      </ul>
-    </div>
+    <section class="menupage">
+      <div class="title">
+        <a href="/"><img src="/cipo_logo.png" alt="CIPO logo" width="300" /></a>
+      </div>
+    </section>
 
     <section>
       <section>
         <MenuTitle title="MENU" />
         <MenuItem
-          item="Four dishes, ‘Kitchens choice’, chosen by the whole table"
+          item="Four dishes, 'Kitchens choice', chosen by the whole table"
           price="395"
         />
       </section>
@@ -65,16 +58,26 @@ import { BarSnacks, ALaCarte, Cheese, Dessert } from "../data/MenuItems.js";
 </Layout>
 
 <style>
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
   .container {
     padding-inline: 1rem;
   }
 
-  .title > img {
-    display: block;
-    margin: 4rem auto;
+  .title {
+    margin-top: 6rem;
+  }
+
+  section:first-child {
+    margin-top: 4rem;
   }
 
   section {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 </style>

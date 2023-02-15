@@ -1,57 +1,61 @@
 export const BarSnacks = [
   {
+    item: "Sourdough from Albatross & venner with olive oil",
+    price: "55",
+  },
+  {
     item: "Marinated Sicilian green olives",
     price: "50",
   },
   {
     item: "Comté 36 mois",
-    price: "95",
+    price: "85",
   },
   {
     item: "Baba ganoush with dukkah",
-    price: "75",
+    price: "85",
   },
   {
-    item: "Pork terrine with mustard and pickles",
-    price: "135",
+    item: "Pork cheeks terrine with mustard and pickles",
+    price: "125",
   },
   {
-    item: "Pata Negra",
-    price: "130",
-  },
-  {
-    item: "Sourdough from Albatross & venner, unfiltered olive oil",
-    price: "55",
+    item: "Jamón Ibérico Bellotta",
+    price: "120",
   },
 ]
 
 export const ALaCarte = [
   {
-    item: "Grilled cauliflower with browned butter and hazelnuts",
+    item: "Grilled cauliflower, capers, hazelnuts",
     price: "125",
   },
   {
-    item: "Salt-baked celeriac with walnuts, salted lemon, and apple",
-    price: "120",
+    item: "Salt-baked celeriac, salted lemon, walnuts",
+    price: "125",
   },
   {
-    item: "Grilled carrots with goat cheese, pine nuts, and balsamico",
+    item: "Carrots, goat cheese, pine nuts",
+    price: "115",
+  },
+  {
+    item: "Scallops, cucumber consommé, kohlrabi",
     price: "135",
   },
   {
-    item: "Charred leeks with lumpfish roe, vinaigrette, and herbs",
-    price: "145",
+    item: "Charred leeks, lumpfish roe, fraiche double",
+    price: "150",
   },
   {
-    item: "Scallops with cucumber consommé and kohlrabi",
-    price: "145",
+    item: "Beef tartare, pickled beech mushroom, panko",
+    price: "150",
   },
   {
-    item: "Beef tartare with pickled beech mushroom and koji mayo",
-    price: "145",
+    item: "Cod, sunchokes, beurre blanc",
+    price: "220",
   },
   {
-    item: "Coq au vin",
+    item: "Coq au Vin",
     price: "245",
   }
 ]
@@ -65,11 +69,11 @@ export const Cheese = [
 
 export const Dessert = [
   {
-    item: "Tiramisu with pistaccio",
-    price: "120",
+    item: "Tiramisu",
+    price: "95",
   },
   {
-    item: "Affogato",
-    price: "85",
+    item: "Crème Brûlée",
+    price: "95",
   }
 ]

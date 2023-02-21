@@ -5,12 +5,13 @@ import { Image } from "@astrojs/image/components";
 
 <Layout title="CIPO | Eatery & Wine">
   <main class="container grid-lg text-center">
-    <section class="frontpage">
-      <div class="title">
-        <img src="/cipo_logo.png" alt="CIPO logo" width="300" />
-      </div>
+    <div class="title">
+      <img src="/cipo_logo.png" alt="CIPO logo" width="300" height="128" />
+    </div>
 
+    <section class="frontpage">
       <div class="content">
+        <h1>About CIPO</h1>
         <p>
           Cipo Eatery and Wine is the go-to destination for locals in
           Copenhagen. Our objective is to offer a warm and inviting dining
@@ -19,6 +20,7 @@ import { Image } from "@astrojs/image/components";
           everything we do.
         </p>
 
+        <h2>Winelist & menu</h2>
         <p>
           Our menu and wine list changes regularly, but <span
             ><a href="/menu"
@@ -39,6 +41,7 @@ import { Image } from "@astrojs/image/components";
       </div>
 
       <div class="content-small">
+        <h2>Bigger groups</h2>
         <p>
           We would be happy to host your next event. Whether it's a birthday, a
           company event, a team day, or a private dinner, CIPO has the right
@@ -138,7 +141,7 @@ import { Image } from "@astrojs/image/components";
     </section>
 
     <section>
-      <div class="content">
+      <div class="content text-center">
         <p>
           <span><b>Opening hours</b></span>
           <span>Wednesday-Friday 15.00-00.00</span>
@@ -146,7 +149,7 @@ import { Image } from "@astrojs/image/components";
         </p>
       </div>
 
-      <div class="content-small">
+      <div class="content-small text-center">
         <a
           href="https://cipo.superbexperience.com"
           class="btn btn-lg btn-primary"
@@ -158,6 +161,12 @@ import { Image } from "@astrojs/image/components";
 </Layout>
 
 <style>
+  h1,
+  h2,
+  h3 {
+    font-size: 1.2rem;
+  }
+
   p {
     font-size: 1rem;
   }

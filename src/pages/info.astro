@@ -3,8 +3,8 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="CIPO | Info">
-  <main class="container grid-lg">
-    <div class="title text-center">
+  <main class="container grid-lg text-center">
+    <div class="title">
       <a href="/"
         ><img
           src="/cipo_logo.png"
@@ -15,7 +15,7 @@ import Layout from "../layouts/Layout.astro";
       >
     </div>
 
-    <div class="content">
+    <div class="content-small">
       <h1 class="content-heading">Food</h1>
 
       <p>
@@ -100,10 +100,12 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
-  .content-heading {
-    text-transform: uppercase;
-    font-size: 1.1rem;
+  h1,
+  h2,
+  h3 {
+    font-size: 1rem;
     font-weight: bold;
+    text-transform: uppercase;
   }
 
   p {

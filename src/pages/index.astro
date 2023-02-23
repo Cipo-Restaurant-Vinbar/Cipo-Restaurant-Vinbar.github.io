@@ -10,8 +10,19 @@ import { Image } from "@astrojs/image/components";
     </div>
 
     <section class="frontpage">
-      <div class="content-small columns">
-        <div class="column show-md">
+      <div class="content-small">
+        <h1>Eatery & natural wine bar</h1>
+        <p>
+          Cipo Eatery and Wine is the go-to destination for locals in
+          Copenhagen. Our objective is to offer a warm and inviting dining
+          experience, prioritizing a relaxed atmosphere and exceptional quality.
+          Our dedication to food and wine is unwavering and at the heart of
+          everything we do.
+        </p>
+      </div>
+
+      <div class="content-small columns show-md">
+        <div class="column">
           <a
             href="https://cipo.superbexperience.com"
             class="btn btn-lg btn-primary mx-2"
@@ -26,16 +37,15 @@ import { Image } from "@astrojs/image/components";
         </div>
       </div>
 
-      <div class="content-small">
-        <h1>About CIPO</h1>
-        <p>
-          Cipo Eatery and Wine is the go-to destination for locals in
-          Copenhagen. Our objective is to offer a warm and inviting dining
-          experience, prioritizing a relaxed atmosphere and exceptional quality.
-          Our dedication to food and wine is unwavering and at the heart of
-          everything we do.
-        </p>
+      <div class="content-small hide-md">
+        <a
+          href="https://cipo.superbexperience.com"
+          class="btn btn-lg btn-primary"
+          target="_blank">Book a table</a
+        >
+      </div>
 
+      <div class="content-small">
         <h2>Winelist & menu</h2>
         <p>
           Our menu and wine list changes regularly, but <span
@@ -48,11 +58,11 @@ import { Image } from "@astrojs/image/components";
         </p>
       </div>
 
-      <div class="content-small">
+      <div class="content-small hide-md">
         <a
-          href="https://cipo.superbexperience.com"
+          href="https://giftcard.superbexperience.com/cipo"
           class="btn btn-lg btn-primary"
-          target="_blank">Book a table</a
+          target="_blank">Get a giftcard</a
         >
       </div>
 
@@ -77,14 +87,6 @@ import { Image } from "@astrojs/image/components";
         </p>
 
         <p>For more information <a href="/info">see the info page.</a></p>
-      </div>
-
-      <div class="content-small">
-        <a
-          href="https://giftcard.superbexperience.com/cipo"
-          class="btn btn-lg btn-primary"
-          target="_blank">Get a giftcard</a
-        >
       </div>
     </section>
 
@@ -154,6 +156,13 @@ import { Image } from "@astrojs/image/components";
           />
         </div>
       </div>
+
+      <!-- LightWidget WIDGET -->
+      <iframe
+        src="//lightwidget.com/widgets/0ce4047fa47956b396ea99f2cb64d56e.html"
+        allowtransparency="true"
+        class="lightwidget-widget"
+        style="width:100%;border:0;overflow:hidden;"></iframe>
     </section>
 
     <section>
@@ -176,11 +185,14 @@ import { Image } from "@astrojs/image/components";
   </main>
 </Layout>
 
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js" defer></script>
+
 <style>
   h1,
   h2,
   h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
   }
 
   p {

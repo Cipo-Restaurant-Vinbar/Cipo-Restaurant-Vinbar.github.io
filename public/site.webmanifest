@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "Cipo | Wine bar & Food",
-  "short_name": "Cipo",
-  "description": "Website for Cipo | Wine bar & Food",
+  "name": "CIPO | Eatery & Wine",
+  "short_name": "CIPO",
+  "description": "CIPO | Eatery & Wine where you can enjoy exceptional natural wine and new nordic inpsired food with local ingredients",
   "display": "standalone",
   "background_color": "#ffecd2",
   "orientation": "portrait",
@@ -13,9 +13,9 @@
   "shortcuts": [
     {
       "id": "menu",
-      "name": "Menu at Cipo | Wine bar & Food",
-      "short_name": "Cipo menu",
-      "description": "Menu at Cipo | Wine bar & Food",
+      "name": "Menu at CIPO | Eatery & Wine",
+      "short_name": "CIPO menu",
+      "description": "Menu at Cipo | Eatery & Wine",
       "url": "/menu",
       "icons": [
         {
@@ -52,9 +52,9 @@
     },
     {
       "id": "info",
-      "name": "Information about Cipo | Wine bar & Food",
-      "short_name": "Cipo info",
-      "description": "Information about Cipo | Wine bar & Food",
+      "name": "Information about CIPO | Eatery & Wine",
+      "short_name": "CIPO info",
+      "description": "Information about CIPO | Eatery & Wine",
       "url": "/info",
       "icons": [
         {

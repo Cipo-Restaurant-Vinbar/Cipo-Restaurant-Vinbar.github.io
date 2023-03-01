@@ -16,10 +16,6 @@ export const BarSnacks = [
     price: "85",
   },
   {
-    item: "Pork cheeks terrine with mustard and pickles",
-    price: "125",
-  },
-  {
     item: "Jamón Ibérico Bellotta",
     price: "120",
   },

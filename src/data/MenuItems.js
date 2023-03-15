@@ -31,10 +31,6 @@ export const ALaCarte = [
     price: "125",
   },
   {
-    item: "Carrots, goat cheese, pine nuts",
-    price: "115",
-  },
-  {
     item: "Scallops, cucumber consommé, kohlrabi",
     price: "135",
   },

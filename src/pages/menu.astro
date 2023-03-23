@@ -2,13 +2,26 @@
 import Layout from "../layouts/Layout.astro";
 import MenuItem from "../components/MenuItem.astro";
 import MenuTitle from "../components/MenuTitle.astro";
-import { BarSnacks, ALaCarte, Cheese, Dessert } from "../data/MenuItems.js";
+import {
+  BarSnacks,
+  Starters,
+  Mains,
+  Cheese,
+  Dessert,
+} from "../data/MenuItems.js";
 ---
 
 <Layout title="CIPO | Menu">
-  <main class="container grid-md">
+  <main class="container grid-lg">
     <div class="title">
-      <a href="/"><img src="/cipo_logo.png" alt="CIPO logo" width="300" alt="CIPO logo" /></a>
+      <a href="/"
+        ><img
+          src="/cipo_logo.png"
+          alt="CIPO logo"
+          width="300"
+          alt="CIPO logo"
+        /></a
+      >
     </div>
 
     <section>
@@ -16,7 +29,7 @@ import { BarSnacks, ALaCarte, Cheese, Dessert } from "../data/MenuItems.js";
         <MenuTitle title="MENU" />
         <MenuItem
           item="Four dishes, 'Kitchens choice', chosen by the whole table"
-          price="395"
+          price="425"
         />
       </section>
 
@@ -30,12 +43,17 @@ import { BarSnacks, ALaCarte, Cheese, Dessert } from "../data/MenuItems.js";
       </section>
 
       <section>
-        <MenuTitle title="À LA CARTE" />
+        <MenuTitle title="STARTERS" />
         {
-          ALaCarte.map((item) => (
+          Starters.map((item) => (
             <MenuItem item={item.item} price={item.price} />
           ))
         }
+      </section>
+
+      <section>
+        <MenuTitle title="MAINS" />
+        {Mains.map((item) => <MenuItem item={item.item} price={item.price} />)}
       </section>
 
       <section>

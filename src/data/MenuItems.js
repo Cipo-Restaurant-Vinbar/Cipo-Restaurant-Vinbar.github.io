@@ -1,53 +1,40 @@
 export const BarSnacks = [
   {
-    item: "Sourdough from Albatross & venner with olive oil",
-    price: "55",
-  },
-  {
     item: "Marinated Sicilian green olives",
     price: "50",
   },
   {
-    item: "Comté 36 mois",
-    price: "85",
-  },
-  {
-    item: "Baba ganoush with dukkah",
-    price: "85",
-  },
-  {
-    item: "Jamón Ibérico Bellotta",
-    price: "120",
-  },
+    item: "Sourdough from Albatross & venner with olive oil",
+    price: "55",
+  }
 ]
 
-export const ALaCarte = [
-  {
-    item: "Grilled cauliflower, capers, hazelnuts",
-    price: "125",
-  },
-  {
-    item: "Salt-baked celeriac, salted lemon, walnuts",
-    price: "125",
-  },
+export const Starters = [
   {
     item: "Scallops, cucumber consommé, kohlrabi",
     price: "135",
   },
   {
-    item: "Charred leeks, lumpfish roe, fraiche double",
-    price: "150",
-  },
-  {
     item: "Beef tartare, pickled beech mushroom, panko",
-    price: "150",
+    price: "160",
   },
   {
-    item: "Cod, sunchokes, beurre blanc",
-    price: "220",
+    item: "Baba ganoush, dukkah, fennel, blood orange",
+    price: "135"
+  }
+]
+
+export const Mains = [
+  {
+    item: "Grilled cauliflower, capers, hazelnuts, brown butter",
+    price: "160",
   },
   {
-    item: "Coq au Vin",
+    item: "Cod, lumpfish roe, sunchokes, shellfish beurre blanc",
+    price: "250",
+  },
+  {
+    item: "Coq au vin",
     price: "245",
   }
 ]

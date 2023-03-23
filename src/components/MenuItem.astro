@@ -8,11 +8,7 @@ const { item, price } = Astro.props;
 ---
 
 <div class="columns pb-2">
-  <div class="column col-2"></div>
-  <div class="column col-8">
-    <p>{item}</p>
-  </div>
-  <div class="column col-2 text-center"><p>{price}</p></div>
+  <div class="column col-12 text-center"><p>{item} {price},-</p></div>
 </div>
 
 <style>

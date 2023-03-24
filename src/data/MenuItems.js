@@ -6,10 +6,6 @@ export const BarSnacks = [
   {
     item: "Sourdough from Albatross & venner with olive oil",
     price: "55",
-  },
-  {
-    item: "Pata Negra",
-    price: "120"
   }
 ]
 
@@ -25,7 +21,11 @@ export const Starters = [
   {
     item: "Baba ganoush, dukkah, fennel, blood orange",
     price: "135"
-  }
+  },
+  {
+    item: "Broccolini, Pata Negra, pine nuts, balsamico",
+    price: "145"
+  },
 ]
 
 export const Mains = [

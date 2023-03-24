@@ -8,7 +8,8 @@ export const BarSnacks = [
     price: "55",
   },
   {
-    item: "Pata Negra"
+    item: "Pata Negra",
+    price: "120"
   }
 ]
 

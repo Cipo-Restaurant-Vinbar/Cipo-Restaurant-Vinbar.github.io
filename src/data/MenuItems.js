@@ -6,6 +6,9 @@ export const BarSnacks = [
   {
     item: "Sourdough from Albatross & venner with olive oil",
     price: "55",
+  },
+  {
+    item: "Pata Negra"
   }
 ]
 

@@ -11,10 +11,6 @@ export const BarSnacks = [
 
 export const Starters = [
   {
-    item: "Scallops, cucumber consommé, kohlrabi",
-    price: "135",
-  },
-  {
     item: "Beef tartare, pickled beech mushroom, panko",
     price: "160",
   },

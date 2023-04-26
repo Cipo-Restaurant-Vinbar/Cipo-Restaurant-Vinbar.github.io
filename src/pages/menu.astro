@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import MenuItem from "../components/MenuItem.astro";
 import MenuTitle from "../components/MenuTitle.astro";
 import {
-  BarSnacks,
+  Snacks,
   Starters,
   Mains,
   Cheese,
@@ -34,9 +34,9 @@ import {
       </section>
 
       <section>
-        <MenuTitle title="BAR SNACKS" />
+        <MenuTitle title="THE LITTLE THINGS IN LIFE" />
         {
-          BarSnacks.map((item) => (
+          Snacks.map((item) => (
             <MenuItem item={item.item} price={item.price} />
           ))
         }

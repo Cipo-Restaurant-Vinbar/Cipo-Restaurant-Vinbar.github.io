@@ -1,58 +1,82 @@
-export const BarSnacks = [
+export const Snacks = [
   {
-    item: "Marinated Sicilian green olives",
+    item: "Green olives",
+    price: "45",
+  },
+  {
+    item: "Smoked and salted almonds",
+    price: "45",
+  },
+  {
+    item: "Tinned fish and roasted bread",
+    price: "85",
+  },
+  {
+    item: "Freshly baked bread and olive oil",
     price: "50",
   },
   {
-    item: "Sourdough from Albatross & venner with olive oil",
-    price: "55",
-  }
+    item: "Padrón and Parmesan",
+    price: "80",
+  },
 ]
 
 export const Starters = [
   {
+    item: "Pata Negra 'Bellota'",
+    price: "130",
+  },
+  {
+    item: "Burrata and tomato salad",
+    price: "110",
+  },
+  {
+    item: "Baba ganoush, fennel, cumin",
+    price: "110",
+  },
+  {
     item: "Beef tartare, pickled beech mushroom, panko",
-    price: "160",
+    price: "150",
   },
   {
-    item: "Baba ganoush, dukkah, fennel, blood orange",
-    price: "135"
+    item: "Grilled green asparagus, creme fraiche, lumpf i sh roe",
+    price: "145",
   },
   {
-    item: "Broccolini, Pata Negra, pine nuts, balsamico",
-    price: "145"
+    item: "Sander ceviche, ponzu, chili, sesame",
+    price: "130",
   },
 ]
 
 export const Mains = [
   {
-    item: "Grilled cauliflower, capers, hazelnuts, brown butter",
+    item: "Rigatoni with pork ragout and herps",
+    price: "175",
+  },
+  {
+    item: "Grilled cauliflower, brown butter, hazelnuts and capers",
     price: "160",
   },
-  {
-    item: "Cod, lumpfish roe, sunchokes, shellfish beurre blanc",
-    price: "250",
-  },
-  {
-    item: "Coq au vin",
-    price: "245",
-  }
 ]
 
 export const Cheese = [
   {
-    item: "3 kinds of danish cheese, hip rose, and rye",
+    item: "Selection Arla Unika cheeses, hip rose compote",
     price: "145",
   }
 ]
 
 export const Dessert = [
   {
-    item: "Tiramisu",
+    item: "Danish rhubarb trifle",
+    price: "95",
+  },
+  {
+    item: "Tiramisu and pistachio",
     price: "95",
   },
   {
     item: "Crème Brûlée",
     price: "95",
-  }
+  },
 ]
